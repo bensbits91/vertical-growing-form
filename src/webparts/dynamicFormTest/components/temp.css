@@ -1,0 +1,116 @@
+#workbenchPageContent, 
+.CanvasZone {
+    max-width: unset;
+    border: none;
+}
+
+/* strectch content area to touch sides */
+#workbenchPageContent {
+    left: 0;
+    right: 0;
+}
+#workbenchPageContent > div > div > div, 
+.CanvasZone, 
+.CanvasSection-col {
+    overflow: hidden;
+    padding: 0;
+}
+.ms-ScrollablePane--contentContainer {
+    padding: 0 100px;
+    overflow-x: hidden;
+}
+
+
+.form-wrap {
+    height: calc(100vh - 130px); /* height for scrollable pane */
+}
+.form-wrap .ms-CommandBar {
+    margin-top: 30px; /* so it looks good in dark mode */
+}
+.form-wrap .ms-CommandBar-secondaryCommand .ms-Button {
+    padding-top: 11px;
+    padding-bottom: 10px;
+}
+
+
+h1 {
+    font-size: 50px;
+    font-weight: 100;
+}
+h2 {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+
+.section-wrap {
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px 2px #ccc;
+    margin-bottom: 60px;
+    padding: 50px 120px 70px;
+}
+
+
+.section-wrap button {
+    margin: 24px 6px;
+}
+
+
+
+
+
+/* compact */
+.compact h2 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+.compact .section-wrap {
+    margin-bottom: 30px;
+    padding: 25px 60px 35px;
+}
+
+
+
+
+
+
+#spPageChromeAppDiv,
+.CanvasSection {
+	background-color: #222; /* only if dark mode, diable otherwise */
+}
+
+.dark .ms-CommandBar,
+.dark .section-wrap {
+    box-shadow: none;
+    border: none;
+}
+/* .dark .ms-CommandBar {
+    box-shadow: 0 4px 6px 2px rgba(0,0,0,.5);
+}
+.dark .section-wrap {
+    box-shadow: 0 4px 6px 2px rgba(0, 0, 0, .5);
+    border: #000;
+} */
+
+.dark .ms-Dropdown-callout button:hover .ms-Dropdown-optionText {
+    color: #111; /* can't figure out how to apply hover styles in FieldDropDown.tsx */
+}
+.dark .ms-Dropdown-callout button:hover {
+    background-color: #777; /* can't figure out how to apply hover styles in FieldDropDown.tsx */
+}
+
+
+
+.dark /* .ms-DatePicker  */.ms-TextField-fieldGroup {
+	background-color: #444;
+	border: none;
+}
+.dark .ms-DatePicker .ms-Label {
+    color: #aaa; /* can't figure out how to apply label styles in FieldDatePicker.tsx */
+}
+.dark .ms-DatePicker .ms-TextField-fieldGroup * {
+	color: #aaa;
+}
+
+
+
